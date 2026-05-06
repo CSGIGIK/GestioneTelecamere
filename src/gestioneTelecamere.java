@@ -1,7 +1,7 @@
 import java.net.URL; // Crea indirizzi web tipo "http://192.168.1.100:80" per la telecamera
 import java.net.HttpURLConnection; // Il collegamento che manda richieste HTTP alla telecamera
 import java.util.Base64; // Trasforma "admin:1234" → "YWRtaW46MTIzNA==" (pacchetto credenziali sicuro)
-/*✨ FUNZIONI:
+/*FUNZIONI:
 • Prende IP + PORTA + PATH (es: "httpbin.org", 80, "/basic-auth/test/passwd")
 • apriConnessione() = BUSSA alla porta
 • apriConnessioneauth() = BUSSA + infila password nella busta
