@@ -9,20 +9,20 @@ public class testCam {
         System.out.println(status);
         switch (status) {
             case 200:
-                System.out.println("✅ OK ");
+                System.out.println("OK ");
                 break;
             case 400:
-                System.out.println("❌ BAD REQUEST - URL o parametri sbagliati");
+                System.out.println("BAD REQUEST - URL o parametri sbagliati");
                 break;
             case 401:
                 connettiamoci.disconnect();
-                System.out.println("🔐 AUTH required");
+                System.out.println("AUTH required");
                 HttpURLConnection conAuth = cam.apriConnessioneauth("test", "passwd");
                 int statusAuth = conAuth.getResponseCode();
                 System.out.println("Con auth: " + statusAuth);
                 break;
             case 404:
-                System.out.println("❌ NOT FOUND");
+                System.out.println("NOT FOUND");
                 break;
 
             default:
